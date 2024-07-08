@@ -1,7 +1,7 @@
 import {Round, Gamestate, BotSelection} from '../models/gamestate';
 
 export function getScoreOfRound(round:Round):-1|0|1{
-    let {p1: player1Move, p2: player2Move}=round;
+    const {p1: player1Move, p2: player2Move}=round;
     const movesThatBeat={
         'R':['P', 'D'],
         'P':['S', 'D'],
